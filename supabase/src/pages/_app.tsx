@@ -2,6 +2,9 @@ import { useState } from 'react'
 import { createBrowserSupabaseClient } from '@supabase/auth-helpers-nextjs'
 import { SessionContextProvider, Session } from '@supabase/auth-helpers-react'
 import { AppProps } from 'next/app'
+import { Auth, ThemeSupa } from '@supabase/auth-ui-react'
+import { useSession, useSupabaseClient } from '@supabase/auth-helpers-react'
+
 
 function MyApp({
   Component,
